@@ -60,7 +60,7 @@ id showed information about the current Linux user.
 
 This helped me understand that a cloud VM is basically a computer in the cloud, with its own CPU, memory, storage and network connection.
 
-##3. Linux Users, Groups and Permissions
+## 3. Linux Users, Groups and Permissions
 
 I also practiced basic Linux user management.
 
@@ -81,7 +81,7 @@ chmod +x filename
 
 This gives the file execute permission.
 
-##4. Installing Nginx
+## 4. Installing Nginx
 
 I installed Nginx on the Ubuntu VM and used it as a web server.
 
@@ -107,7 +107,7 @@ This confirmed that Nginx was responding locally.
 ![Nginx Test](screenshots/Screenshot%202026-09-11%20104603.png)
 
 
-##5. Accessing the Website Through the Public IP
+## 5. Accessing the Website Through the Public IP
 
 After getting Nginx running, I allowed HTTP traffic through port 80 on the Azure VM.
 
@@ -132,7 +132,7 @@ This was one of the parts of the lab that helped me understand how a web server 
 
 ![NginxTest](screenshots/Screenshot%202026-09-11%20105705.png)
 
-##6. VM Shutdown and Lifecycle Experiment
+## 6. VM Shutdown and Lifecycle Experiment
 
 I also carried out a VM lifecycle experiment.
 
@@ -164,7 +164,7 @@ One thing I learned from this experiment is that stopping or restarting a VM is 
 
 
 
-##7. Additional Storage
+## 7. Additional Storage
 
 I also worked with attaching an additional disk to the VM.
 
@@ -192,7 +192,7 @@ I also learned the difference between seeing a disk with lsblk and seeing mounte
 
 
 
-##8. Resizing the Virtual Machine
+## 8. Resizing the Virtual Machine
 
 The next part of the lab was to understand compute scaling.
 
@@ -216,7 +216,7 @@ This showed me that increasing the size of a VM does not mean creating a new mac
 
 ![Rsizing storage](screenshots/Screenshot%202026-09-15%20000611.png)
 
-##9. Vertical Scaling
+## 9. Vertical Scaling
 
 This VM resize was an example of vertical scaling.
 
@@ -240,7 +240,7 @@ Instead of creating a completely new VM, I can increase the resources of the exi
 
 ![Nginx After Resize](screenshots/Screenshot%202026-09-15%20001637.png)
 
-##10. What I Learned
+## 10. What I Learned
 
 This lab gave me more practical understanding of how cloud virtual machines work.
 
