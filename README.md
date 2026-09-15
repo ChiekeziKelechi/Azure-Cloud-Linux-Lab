@@ -29,6 +29,8 @@ During the setup, I worked with:
 
 After creating the VM, I connected to it through SSH using MobaXterm and started working from the Ubuntu terminal.
 
+![Azure VM Deployment](screenshots/Screenshot%202026-09-07%20134738.png)
+
 ---
 
 ## 2. Exploring the VM
@@ -37,7 +39,7 @@ After connecting to the VM, I used different Linux commands to understand what w
 
 Some of the commands I used were:
 
-```bash
+
 lscpu
 free -h
 df -h
@@ -58,7 +60,7 @@ id showed information about the current Linux user.
 
 This helped me understand that a cloud VM is basically a computer in the cloud, with its own CPU, memory, storage and network connection.
 
-3. Linux Users, Groups and Permissions
+##3. Linux Users, Groups and Permissions
 
 I also practiced basic Linux user management.
 
@@ -79,7 +81,7 @@ chmod +x filename
 
 This gives the file execute permission.
 
-4. Installing Nginx
+##4. Installing Nginx
 
 I installed Nginx on the Ubuntu VM and used it as a web server.
 
@@ -98,7 +100,14 @@ curl localhost
 
 This confirmed that Nginx was responding locally.
 
-5. Accessing the Website Through the Public IP
+![Nginx Status](screenshots/Screenshot%202026-09-11%20104007.png)
+
+![Nginx Test](screenshots/Screenshot%202026-09-11%20104030.png)
+
+![Nginx Test](screenshots/Screenshot%202026-09-11%20104603.png)
+
+
+##5. Accessing the Website Through the Public IP
 
 After getting Nginx running, I allowed HTTP traffic through port 80 on the Azure VM.
 
@@ -121,7 +130,9 @@ Ubuntu VM
 
 This was one of the parts of the lab that helped me understand how a web server on a cloud VM can actually be reached from the internet.
 
-6. VM Shutdown and Lifecycle Experiment
+![NginxTest](screenshots/Screenshot%202026-09-11%20105705.png)
+
+##6. VM Shutdown and Lifecycle Experiment
 
 I also carried out a VM lifecycle experiment.
 
@@ -151,7 +162,9 @@ Delete removes the VM resource. Other resources such as disks, network interface
 
 One thing I learned from this experiment is that stopping or restarting a VM is not the same thing as deleting the machine and its data.
 
-7. Additional Storage
+
+
+##7. Additional Storage
 
 I also worked with attaching an additional disk to the VM.
 
@@ -173,7 +186,13 @@ This was different from the sda and sdb names I had expected, which helped me un
 
 I also learned the difference between seeing a disk with lsblk and seeing mounted filesystems with df -h.
 
-8. Resizing the Virtual Machine
+![Additional Storage](screenshots/Screenshot%202026-09-12%20113536.png)
+
+![Checking Storage](screenshots/Screenshot%202026-09-14%20235931.png)
+
+
+
+##8. Resizing the Virtual Machine
 
 The next part of the lab was to understand compute scaling.
 
@@ -195,7 +214,9 @@ I checked Nginx again after the resize and confirmed that it was still installed
 
 This showed me that increasing the size of a VM does not mean creating a new machine or reinstalling the operating system.
 
-9. Vertical Scaling
+![Rsizing storage](screenshots/Screenshot%202026-09-15%20000611.png)
+
+##9. Vertical Scaling
 
 This VM resize was an example of vertical scaling.
 
@@ -217,7 +238,9 @@ The reason for doing this would be when an application or workload needs more CP
 
 Instead of creating a completely new VM, I can increase the resources of the existing VM.
 
-10. What I Learned
+![Nginx After Resize](screenshots/Screenshot%202026-09-15%20001637.png)
+
+##10. What I Learned
 
 This lab gave me more practical understanding of how cloud virtual machines work.
 
