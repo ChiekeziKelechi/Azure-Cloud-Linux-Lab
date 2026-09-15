@@ -163,7 +163,6 @@ Delete removes the VM resource. Other resources such as disks, network interface
 One thing I learned from this experiment is that stopping or restarting a VM is not the same thing as deleting the machine and its data.
 
 
-
 ## 7. Additional Storage
 
 I also worked with attaching an additional disk to the VM.
